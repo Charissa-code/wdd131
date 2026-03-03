@@ -5,7 +5,8 @@
 }
 
 header {
-    background-color: rgb(75, 74, 74);
+    grid-column: 1/4;
+    background-color: rgb(40, 40, 50);
     height: 100px;
     color: white;
 }
@@ -32,23 +33,22 @@ nav li {
     font-size: x-small;
 }
 
-
-
-.grid-container {
+body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 350px;
-
-
+    grid-template-rows: 1fr 3fr 100px 30px;
+  
 }
 main {
     grid-column: 1/3;
     background-color: rgb(204, 216, 238);
+     font-size: x-small;
     
 }
     
-aside {
+aside{
     grid-column: 3/4;
+    font-size: x-small;
 }
 
 .box {
@@ -58,7 +58,8 @@ aside {
 }
 
 footer {
-    background-color: rgb(75, 74, 74);
+    grid-column: 1/4;
+    background-color: rgb(40, 40, 50);
     color: white;
     height: 100px;
     width: 100%;
@@ -67,7 +68,9 @@ footer {
     text-align: center;
 }
 
-h4 {
+section {
+    grid-column: 1/4;
+    grid-row: 4/5;
     height: 50px;
     width: 100%;
     padding: .5rem;
