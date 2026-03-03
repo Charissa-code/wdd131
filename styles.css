@@ -16,14 +16,12 @@ header p {
     justify-self: left;
  }
 
-
-
 nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: black;
-    height: 35px;
+    height: 32px;
     margin-top: 1.5rem;
 }
 
@@ -37,20 +35,20 @@ nav li {
 
 
 
-div {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 350px;
 
 
 }
-div main {
+main {
     grid-column: 1/3;
     background-color: rgb(204, 216, 238);
     
 }
     
-div aside {
+aside {
     grid-column: 3/4;
 }
 
@@ -70,10 +68,11 @@ footer {
     text-align: center;
 }
 
-section {
+h4 {
     height: 50px;
     width: 100%;
     padding: .5rem;
     font-size: x-small;
     text-align: center;
+    
 }
