@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WDD 131</title>
+    <title> WDD 131-Dynamic Web Fundamentals-Charissa Maes</title>
+    <meta name="description" content="Charissa Maes's home page for WDD 131-Dynamic Web Fundamentals with JavaScript and all about me.">
+    <meta name="author"  content="Charissa Maes">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> WDD 131 Chairssa-code</h1>
+    <header>
+        <h1><span id="course-title">WDD 131-Dynamic Web Fundamentals</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/18?lang=eng#:~:text=12%20How%20think,should%20perish.">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cards">
+        <h1>Charissa Maes</h1>
+        <section class="card1">
+            <h2 class="about-me">About Me</h2> 
+            <img class="beach" src="images/beach-log-us.jpg" alt="Charissa Maes's profile picture">
+            <p class="me-p">My name is Charissa and I live in the USA.  I grew up traveling the world with my family. I am married with 3 sons, 2 daughter-in-laws, 1 grand-baby and another one on the way. I love my family more than anything. I have a testimony that God loves and knows me. He sent His son Jesus Christ who is our advocate to the Father, our brother, our Savior. He suffered the pains of sin and of the world. He and only He can know what we are experiencing in this world and I feel of His love in my life. He has carried me, walked beside me, comforted me, rejoiced with me and I continue to try to follow His example so that I can return to live with Him again.</p>   
+            
+            <hr>
+            
+            <h2 class="texas-usa">Texas USA</h2>
+            <p class="texas-p">I currently live in the great state of Texas. We have many different climates here ranging from the  desert, tropical beaches and green rolling hills. The beautiful bluebonnet flower, as seen in the picture, is the state flower and in the Spring you can see fields of it everywhere. In Texas we have real cowboys and cowgirls who live and work very hard on ranches raising and herding cattle including the legendary Texas Longhorns whose horns can span tip to tip between 3-6ft wide. We can have wild weather and if you live here then put your cowboy hat and boots on and hang on for the ride.</p> 
+            <img class="bluebonnets" src="images/texas-bluebonnets.jpg" alt="Texas USA flag and bluebonnet flowers">
+        </section>
+        <section class="card2">
+            <h2 class="resources">Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://squoosh.app/">Squoosh</a></li>
+                <li><a href="https://www.w3schools.com/cssref/index.php">CSS Reference</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/validator.html.en">CSS Validator</a></li>
+                <li><a href="https://codepen.io/trending">Code Pen</a></li>
+            </ul>
+            
+        
+            
+        
+        </section>   
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>Charissa Maes USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-</html>
+</html>     
