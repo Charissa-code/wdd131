@@ -1,0 +1,18 @@
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	nav {
+		display: flex;
+	}
+	nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	nav a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}}
+

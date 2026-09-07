@@ -1,0 +1,171 @@
+* {
+	margin:.5rem;
+  	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 1rem;
+	align-items: center;
+	padding: .5rem 5rem .5rem 2rem;
+	
+}
+h1{
+	display: block;
+	color: #993838;
+	font-weight: 400;
+	font-style: normal;
+	justify-self: flex-start;
+	align-self: center; 
+}
+header h1 {
+	font-size: 3rem;
+	justify-self: center;
+}
+
+/* mobile view */
+
+#menu {
+	display: block;
+	font-weight: 500;
+	text-decoration: none;
+	color: #000;
+	justify-self: flex-end;
+	font-size: 3rem;
+} 
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+.show li {
+	display: block;
+}
+
+nav ul{
+	display: none;
+	list-style: none;
+	margin: 0 auto;
+}
+
+nav.show ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	
+}
+nav li {
+	display: block;
+}
+
+nav a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	transition: 0.5s;
+	font-size: clamp(1.2rem, 2vmin, 1.5rem);
+	background-color: rgb(70, 40, 40);
+	padding: .3rem 1rem;
+	margin: .1rem;
+	border:  1.5px solid white;
+	border-radius: 15px;
+	width: 6rem;
+}
+
+nav a:hover,
+nav a:active {
+	background-color: hsl(0, 3%, 94%);
+}
+
+
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	nav ul {
+		display: flex;
+	}
+	nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	nav a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}}
+	
+.hover {
+	flex: 1 1 150px; 
+	text-align: center;
+}
+
+main h1 {
+	font-size: 2.5rem;
+	justify-self: center;
+	margin: 1rem;
+	
+	
+}
+main {
+	display: block;
+	justify-content: center;
+	font-family: 'Taviraj', serif;
+	font-weight: 400;
+	font-size: 1rem;
+	margin-right: 4em;
+ }
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+	text-align: center;
+}
+.hover:hover {
+	box-shadow: 0 5px 20px #61242467;
+	border: solid 2px white;
+}
+
+figcaption {
+	font-family: 'Taviraj', serif;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	}
+
+
+footer {
+  background-color: #e7ebeb;
+  border-radius: 10px;
+  padding: .5rem;
+	height: 7rem;
+}
+
+footer p {
+  justify-self: center;
+  line-height: 1;
+  margin: .5rem;
+	font-size: 1.6rem;
+}
