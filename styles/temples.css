@@ -18,13 +18,13 @@ header {
 }
 h1{
 	display: block;
-	color: #993838;
+	color: rgb(153, 56, 56);
 	font-weight: 400;
 	font-style: normal;
 	justify-self: flex-start;
 	align-self: center; 
 }
-header h1 {
+header p {
 	font-size: 3rem;
 	justify-self: center;
 }
@@ -35,7 +35,7 @@ header h1 {
 	display: block;
 	font-weight: 500;
 	text-decoration: none;
-	color: #000;
+	color: rgb(0, 0, 0);
 	justify-self: flex-end;
 	font-size: 3rem;
 } 
@@ -73,7 +73,7 @@ nav a {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	color: white;
+	color: rgb(255, 255, 255);
 	font-weight: 500;
 	transition: 0.5s;
 	font-size: clamp(1.2rem, 2vmin, 1.5rem);
@@ -87,7 +87,7 @@ nav a {
 
 nav a:hover,
 nav a:active {
-	background-color: hsl(0, 3%, 94%);
+	background-color: rgb(240, 239, 239);
 }
 
 
@@ -141,7 +141,7 @@ main {
 	text-align: center;
 }
 .hover:hover {
-	box-shadow: 0 5px 20px #61242467;
+	box-shadow: 0 5px 20px rgba(97, 36, 36, 0.404);
 	border: solid 2px white;
 }
 
@@ -156,7 +156,7 @@ img {
 
 
 footer {
-  background-color: #e7ebeb;
+  background-color: rgb(231, 235, 235);
   border-radius: 10px;
   padding: .5rem;
 	height: 7rem;
