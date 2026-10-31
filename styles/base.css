@@ -14,7 +14,7 @@
 
 body {
   font-family: var(--font-body);
-  font-weight: var(--font-regular);
+  font-weight: var(--weight-regular);
   font-size: 16px;
   max-width: 900px;
 }
@@ -82,7 +82,7 @@ h1 {
 }
 
 section {
-  border: 1px solid rgb(37, 37, 37);
+  
   border-radius: .5rem;
   padding: 1.5rem; 
 }
@@ -110,32 +110,32 @@ p {
   margin-top: 2rem;
 }
 
-.card-1  {
+.card:first-of-type  {
   display: flow-root;
 }
 
-.card-1 img:first-of-type {
+.card:first-of-type img:first-of-type {
   float: right;
   width: 120px;
   margin:0 0 1rem 1rem;  
 }
 
-.card-1 img:last-of-type {
+.card:first-of-type img:last-of-type {
   float: left;
   width: 120px;
   margin: 0 1rem 1rem 0;
 }
 
-.card-1 hr {
+.card:first-of-type hr {
   margin: 1rem 8rem 1rem 1rem;
 }
 
-.card-2 ul{
+.card:last-of-type ul{
   font-weight: 300;
   padding: 10px;  
 }
 
-.card-2 li {
+.card:last-of-type li {
   text-decoration: none;
   padding: 5px 1rem;
 }
@@ -147,10 +147,8 @@ footer {
 }
 
 footer p {
- justify-self: center;
- line-height: 1;
- margin: .4rem 0;
- 
- 
+  text-align: center;
+  line-height: 1;
+  margin: .4rem 0;
 }
 
