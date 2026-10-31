@@ -52,12 +52,10 @@ nav ul {
 }
 
 nav a{
-  
   color: rgb(216, 243, 247);
   text-decoration: none;
   font-weight: 300;
   padding: 10px;
-  justify-items: space-around;
 }
 
 nav a:hover {
