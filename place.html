@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croatia</title>
+  <meta name="description" content="This page will be about a place I would like to visit and that is Croatia. It will show the country stats and weather along with a hero image of a scene. I will use JavaScript and CSS to create a responsive page that will display appropriately whether in desktop or mobile viewport.">
+  <meta name="author" content="Charissa Maes">
+  <link rel="stylesheet" href="styles/place.css"/>
+  <link rel="stylesheet" href="styles/place-large.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,500;1,17..18,300&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,500;1,17..18,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,700;1,17..18,700&display=swap"
+    rel="stylesheet">
+  <script src="scripts/place.js" defer></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Croatia</h1>
+  </header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source media="(min-width:650px)" srcset="images/croatia-lg-cropped.webp">
+        <source media="(min-width:200px )" srcset="images/croatia-mobile.webp">
+        <img src="images/croatia-mobile.webp" alt="Stunning aerial shot of Primošten, Croatia, showcasing the picturesque peninsula town surrounded by azure waters"> 
+      </picture>
+    </div>
+    <section class="data">
+      <h2>Data</h2>
+      <ul> 
+        <li><strong>Area:</strong>56,594 sq km</li>
+        <li><strong>Population:</strong>4.1 million </li>
+        <li><strong>Capital:</strong>Zagreb</li>
+        <li><strong>Languages:</strong>Croatian</li>
+        <li><strong>Currency:</strong>Euro</li>
+        <li><strong>Time Zone:</strong>UTC +1 / +2</li>
+        <li><strong>Calling Code:</strong>+385</li>
+        <li><strong>Internet TLD:</strong>.hr</li>
+      </ul> 
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <svg class="cloud" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#1b9ee4";
+ class="bi bi-cloud-haze2"
+      viewBox="0 0 16 16">
+      <path
+        d="M8.5 3a4 4 0 0 0-3.8 2.745.5.5 0 1 1-.949-.313 5.002 5.002 0 0 1 9.654.595A3 3 0 0 1 13 12H4.5a.5.5 0 0 1 0-1H13a2 2 0 0 0 .001-4h-.026a.5.5 0 0 1-.5-.445A4 4 0 0 0 8.5 3M0 7.5A.5.5 0 0 1 .5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m2 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-2 4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5" />
+    </svg>
+   
+      <li><strong>Temperature:</strong> 10&degC </li>
+      <li><strong>Conditions:</strong> Cloudy & Windy</li>
+      <li><strong>Wind:</strong> 10kmh</li>
+      <li><strong>Wind Chill:</strong><span id="windChill"></span>  </li>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Charissa Maes USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
