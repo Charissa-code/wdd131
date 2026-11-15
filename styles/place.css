@@ -8,9 +8,9 @@
   --dk-blue: #041a25;
   --lt-blue: #69e3f8;
   --white:#ffffff;
-  --f-700: font-weight: 700;
-  --f-500: font-weight: 500;
-  --f-300: font-weight: 300;
+  --f-700: 700;
+  --f-500: 500;
+  --f-300: 300;
 }
 
 body {
@@ -109,7 +109,7 @@ footer {
 } 
 
 footer p {
-  font: size 12px;
+  font-size: 12px;
   margin: 5px 0;
 }
 
