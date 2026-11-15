@@ -26,7 +26,7 @@ header {
 
 h1 {
   color: #000000;
-  font-size-adjust: var(--f-700);
+  font-weight: var(--f-700);
   text-align: center;
   margin: 2px;
 }
