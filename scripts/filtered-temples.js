@@ -106,26 +106,36 @@ const largeLink = document.querySelector("#large");
 const smallLink = document.querySelector("#small");
 
 homeLink.addEventListener("click", () => {
+  const pageTitle = document.querySelector("main h1");
+  pageTitle.textContent = "Home"
   createTempleCard(temples);
 })
 
 oldLink.addEventListener("click", () => {
   let old = temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900);
+  const pageTitle = document.querySelector("main h1");
+  pageTitle.textContent = "Old";
   createTempleCard(old)
 })
 
 newLink.addEventListener("click", () => {
   let newTemples = temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000);
+  const pageTitle = document.querySelector("main h1");
+  pageTitle.textContent = "New";
   createTempleCard(newTemples)
 })
 
 largeLink.addEventListener("click", () => {
   let large = temples.filter(temple => (temple.area > 90000));
+  const pageTitle = document.querySelector("main h1");
+  pageTitle.textContent = "Large";
   createTempleCard(large)
 })
 
 smallLink.addEventListener("click", () => {
   let small = temples.filter(temple => (temple.area < 10000));
+  const pageTitle = document.querySelector("main h1");
+  pageTitle.textContent = "Small"
   createTempleCard(small)
 })
 
