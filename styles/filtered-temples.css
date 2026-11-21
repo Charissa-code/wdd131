@@ -148,7 +148,7 @@ main {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 15px var(--shadows);
-  border: solid 2px white;
+  border: solid 2px var(--white);
   transition-duration: 0.3s;
 }
 
